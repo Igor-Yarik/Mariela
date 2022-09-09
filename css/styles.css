@@ -116,6 +116,14 @@ a {
   margin-left: 45px;
 }
 
+@media (max-width: 1240px) {
+  .header {
+    flex-direction: column;
+  }
+  .navigation {
+    margin-top: 15px;
+  }
+}
 .collection {
   position: relative;
   padding-top: 72px;

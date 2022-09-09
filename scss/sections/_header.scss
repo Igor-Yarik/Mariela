@@ -27,3 +27,13 @@
         }
     }
 }
+
+@media (max-width: 1240px) {
+    .header {
+        flex-direction: column;   
+    }
+
+    .navigation {
+        margin-top: 15px;
+    }
+}
