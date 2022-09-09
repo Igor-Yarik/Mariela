@@ -1,15 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Cormorant Garamond', serif;
     /* font-family: 'Roboto', sans-serif; */
 }
 
-.container {
-    width: calc(100% - 126px);
-    margin-right: auto;
-    margin-left: auto;
+h1, h2, h3, h4, p {
+    margin: 0;
 }
 
 a {
     text-decoration: none;
+}
+
+.container {
+    width: calc(1440px - 226px);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.designer .container {
+    width: calc(1440px - 262px);
 }

@@ -1,0 +1,43 @@
+.collection {
+    position: relative;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-color: #D6BBD3;
+
+    &::after {
+        position: absolute;
+        content: '';
+        right: 162px;
+        bottom: 0;
+        width: 50px;
+        height: 50px;
+        background-color: #A78BA4;
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        right: 112px;
+        bottom: 0;
+        width: 50px;
+        height: 50px;
+        background-color: #B08EAD;
+    }
+
+    img {
+        margin-left: 65px;
+    }
+
+    &__items {
+        position: relative;        
+    }
+
+    &__item {
+        position: absolute;
+        top: 110px;
+        right: 0;
+        width: 425px;
+        padding: 124px 105px 119px 40px;
+        background-color: #B08EAD;
+    }
+}

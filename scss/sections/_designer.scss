@@ -1,0 +1,40 @@
+.designer {
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__subitems {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__subitem {
+        background-color: #CEB3CB;
+    }
+
+    .title__subtext {
+        margin-top: 13px;
+        margin-bottom: 17px;
+        width: 747px;
+    }
+
+    .title__btn {
+        margin-bottom: 50px;
+    }
+
+    &__link {
+        display: inline-flex;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 30px;
+        color: #FFFFFF;
+        margin-bottom: 24px;
+        margin-left: 23px;
+    }
+
+}
