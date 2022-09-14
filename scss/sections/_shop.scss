@@ -1,0 +1,41 @@
+.shop {
+    margin-top: 75px;
+    margin-bottom: 75px;
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 33.33%;
+
+        &__image:hover {
+            box-shadow: 0 0 10px 10px #CEB3CB;
+        }
+
+        &__name {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;            
+            color: #5F4D5D;
+            margin-top: 9px;
+            margin-bottom: 7px;
+        }
+
+        &__price {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+            text-align: center;            
+            color: #B0B0B0;
+            margin-bottom: 54px;
+        }
+    }
+}
