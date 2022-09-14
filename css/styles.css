@@ -196,3 +196,24 @@ a {
   margin-bottom: 24px;
   margin-left: 23px;
 }
+
+.about {
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: #CEB3CB;
+}
+.about img {
+  margin-left: 472px;
+}
+.about__items {
+  position: relative;
+}
+.about__item {
+  position: absolute;
+  top: 110px;
+  left: 101px;
+  width: 440px;
+  padding: 124px 58px 119px 63px;
+  background-color: #B08EAD;
+}
