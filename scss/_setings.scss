@@ -5,10 +5,9 @@
 body {
     margin: 0;
     font-family: 'Cormorant Garamond', serif;
-    /* font-family: 'Roboto', sans-serif; */
 }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
@@ -24,4 +23,8 @@ a {
 
 .designer .container {
     width: calc(1440px - 262px);
+}
+
+.shipping .container {
+    width: calc(1440px - 634px);
 }

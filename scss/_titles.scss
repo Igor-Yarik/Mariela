@@ -7,6 +7,7 @@
     margin-bottom: 22px;
 
     &__btn {
+        font-family: 'Roboto';
         display: inline-flex;
         font-weight: 400;
         font-size: 11px;
@@ -18,15 +19,13 @@
         border: 1px solid #B99BB6;
         border-radius: 25px;
         padding: 16px 26px 14px 26px;
-        transition: all 0.5s;
-        
+        transition: all 0.5s;        
 
         &:hover {
             background-color: #B99BB6;
             color: #FFFFFF;
             transition: all 0.5s;            
-        }
-        
+        }        
     }
 
     &__text, &__btn__buy  {
@@ -36,15 +35,12 @@
         letter-spacing: 1.5px;
         text-transform: uppercase;
         color: #FFFFFF;
-
     }   
 
     &__btn__buy {
         padding-bottom: 7px;  
         border-bottom: 2px solid #FFFFFF;
     }
-
-
 
     &__sub {
         font-family: 'Roboto', sans-serif;
@@ -74,6 +70,47 @@
         margin-bottom: 6px;
         margin-left: 23px;
     }
-
 }
 
+.data {
+
+    &__title {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 30px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &__text {
+        display: flex;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 30px;
+        color: #FFFFFF;
+        font-style: normal;
+        margin-bottom: 20px;
+    }
+}
+
+.shipping {
+
+    &__title {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;    
+        color: #FFFFFF;
+    }
+
+    &__text {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;    
+        color: #FFFFFF;        
+    }
+}

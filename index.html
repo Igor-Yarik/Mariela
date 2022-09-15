@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,12 +8,12 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto&display=swap"
         rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
-
 <body>
     <header>
         <div class="container">
-            <div class="header">
+            <div class="header" id="top">
                 <div class="logo">
                     <img src="./images/header/logo.png" alt="Logo">
                 </div>
@@ -72,6 +71,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
         <section class="about">
             <div class="container">
@@ -138,41 +138,160 @@
             <div class="container">
                 <div class="shop__items">
                     <div class="shop__item">
-                        <img class="shop__item__image" src="/images/shop/image_01.jpg" alt="">
+                        <img class="shop__item__image" src="./images/shop/image_01.jpg" alt="">
                         <h4 class="shop__item__name">Plated Cushion</h4>
                         <p class="shop__item__price">$ 19.99 USD</p>
                     </div>
                     <div class="shop__item">
-                        <img class="shop__item__image" src="/images/shop/image_02.jpg" alt="">
+                        <img class="shop__item__image" src="./images/shop/image_02.jpg" alt="">
                         <h4 class="shop__item__name">Silver Cushion</h4>
                         <p class="shop__item__price">$ 19.99 USD</p>
                     </div>
                     <div class="shop__item">
-                        <img class="shop__item__image" src="/images/shop/image_03.jpg" alt="">
+                        <img class="shop__item__image" src="./images/shop/image_03.jpg" alt="">
                         <h4 class="shop__item__name">Deep Blue Cushion</h4>
                         <p class="shop__item__price">$ 19.99 USD</p>
                     </div>
                     <div class="shop__item">
-                        <img class="shop__item__image" src="/images/shop/image_04.jpg" alt="">
+                        <img class="shop__item__image" src="./images/shop/image_04.jpg" alt="">
                         <h4 class="shop__item__name">Pink Cushion</h4>
                         <p class="shop__item__price">$ 19.99 USD</p>
                     </div>
                     <div class="shop__item">
-                        <img class="shop__item__image" src="/images/shop/image_05.jpg" alt="">
+                        <img class="shop__item__image" src="./images/shop/image_05.jpg" alt="">
                         <h4 class="shop__item__name">Black Cushion</h4>
                         <p class="shop__item__price">$ 19.99 USD</p>
                     </div>
                     <div class="shop__item">
-                        <img class="shop__item__image" src="/images/shop/image_06.jpg" alt="">
+                        <img class="shop__item__image" src="./images/shop/image_06.jpg" alt="">
                         <h4 class="shop__item__name">Green Cushion</h4>
                         <p class="shop__item__price">$ 19.99 USD</p>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="data">
+            <div class="container">
+                <div class="data__items">
+                    <div class="data__item">
+                        <h5 class="data__title">email</h5>
+                        <a class="data__text" href="mailto:support@website.com">support@website.com</a>
+                        <h5 class="data__title">phone</h5>
+                        <a class="data__text" href="tel:+3800123456">800-123-456</a>
+                        <h5 class="data__title">address</h5>
+                        <address class="data__text">23 Evergreen Street, San Francisco, California USA</address>
+                    </div>
+                    <div class="data__item">
+                        <h5 class="data__title">address</h5>
+                        <a class="data__text" href="">Drop us your message and I'll get back to you as soon as
+                            possible.</a>
+                        <form class="data__form" action="https://fom.in.ua/echo" method="post">
+                            <div class="data__form__item">
+                                <input class="data__form__subitem" type="text" name="name" placeholder="your name">
+                                <input class="data__form__subitem" type="text" name="company"
+                                    placeholder="your company">
+                                <input class="data__form__subitem" type="tel" name="phone" placeholder="your phone">
+                                <input class="data__form__subitem" type="email" name="email" placeholder="your email">
+                                <textarea class="data__form__subitem" name="message" cols="30" rows="4"
+                                    placeholder="your message"></textarea>
+                            </div>
+                            <button class="data__form__btn" type="submit">Lets talk</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="newsletter">
+            <div class="container">
+                <h3 class="title__sub">NEWSLETTER</h3>
+                <p class="title__subtext">Get promotions & updates!</p>
+                <form class="newsletter__form" action="https://fom.in.ua/echo" method="post">
+                    <input class="newsletter__form__item" type="text" name="name" placeholder="your name">
+                    <input class="newsletter__form__item" type="email" name="email" placeholder="your email">
+                    <button class="newsletter__form__btn" type="submit">subscribe</button>
+                </form>
+            </div>
+        </section>
+        <section class="shipping">
+            <div class="container">
+                <div class="shipping__items">
+                    <div class="shipping__item">
+                        <div class="shipping__img">
+                            <img src="./images/shipping/shopping.png" alt="">
+                        </div>
+                        <h6 class="shipping__title">Safe shopping</h6>
+                        <p class="shipping__text">Buy with confidence</p>
+                    </div>
+                    <div class="shipping__item">
+                        <div class="shipping__img">
+                            <img src="./images/shipping/shipping.png" alt="">
+                        </div>
+                        <h6 class="shipping__title">Fast shipping</h6>
+                        <p class="shipping__text">Get your product fast</p>
+                    </div>
 
+                    <div class="shipping__item">
+                        <div class="shipping__img">
+                            <img src="./images/shipping/guarantee.png" alt="">
+                        </div>
+                        <h6 class="shipping__title">Satisfaction guarantee</h6>
+                        <p class="shipping__text">Or get your money back</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer__item">
+                    <div class="logo">
+                        <img src="./images/footer/logo.png" alt="Logo">
+                    </div>
+                    <div class="navigation">
+                        <nav>
+                            <a class="nav_link" href="#">Home</a>
+                            <a class="nav_link" href="#">About me</a>
+                            <a class="nav_link" href="#">Products</a>
+                            <a class="nav_link" href="#">Contact me</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="social">
+                        <a class="social__link" href="#" target="_blank">
+                            <img src="./images/footer/fb_icon.png" alt="Facebook">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="copyright__item">
+                    <p class="copyright__text">Version 1.2 |</p>
+                    <p class="copyright__text">Image</p>
+                    <p class="copyright__text">Licensing |</p>
+                    <p class="copyright__text">Made By</p>
+                    <p class="copyright__text">Pablo Ramos |</p>
+                    <p class="copyright__text">Visit My</p>
+                    <p class="copyright__text">Templates |</p>
+                    <p class="copyright__text">Powered By</p>
+                    <p class="copyright__text">Webflow</p>
+                </div>
+                <div class="copyright__item">
+                    <a class="copyright__arrow" href="#top"><img src="./images/footer/arrow.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $('a[href*="#top"]').on('click', function () {
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 1500);
+            return false;
+        });
+    </script>
 
 </body>
-
 </html>
