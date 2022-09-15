@@ -83,3 +83,24 @@
         }
     }
 }
+
+@media (max-width: 1220px) {
+    .data__items {
+        flex-direction: column;
+    }
+
+    .data__item:last-child {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 568px) {
+    .data__item {
+
+        &:first-child {
+            margin-right: 0;
+            margin-left: 0;
+        }
+        
+    }
+}

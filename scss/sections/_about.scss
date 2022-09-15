@@ -4,12 +4,18 @@
     padding-bottom: 75px;
     background-color: #CEB3CB;
 
+    
+
     img {
-        margin-left: 472px;
+        margin-left: 272px;
+        max-width: 100%;
     }
 
+        
+
     &__items {
-        position: relative;        
+        position: relative;  
+        text-align: center;      
     }
 
     &__item {
@@ -17,7 +23,32 @@
         top: 110px;
         left: 101px;
         width: 440px;
+        max-width: 100%;
         padding: 124px 58px 119px 63px;
         background-color: #B08EAD;
+    }
+}
+
+
+@media (max-width: 920px) {
+    .about {
+            
+        img {
+            margin-left: 0;
+        }
+
+        &__items {
+            display: flex;
+            justify-content: center;            
+        }
+
+        &__item {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: .8;
+            
+        }
+
     }
 }

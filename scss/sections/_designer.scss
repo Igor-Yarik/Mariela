@@ -37,3 +37,31 @@
         margin-left: 23px;
     }
 }
+
+@media (max-width: 1220px) {
+    .designer__subitems {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .designer__subitem {
+        width: 368px;
+        margin-bottom:  30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .designer {
+        
+        .title__subtext {
+            width: 100%;
+        }
+    }
+
+    }
+    

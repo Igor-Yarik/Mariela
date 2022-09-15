@@ -29,3 +29,13 @@
         }
     }
 }
+
+@media (max-width: 568px) {
+    .shipping__items {
+        flex-direction: column;
+    }
+
+    .shipping__item {
+        margin-bottom: 20px;
+    }
+}

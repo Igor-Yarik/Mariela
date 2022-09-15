@@ -85,3 +85,34 @@ footer {
         background-color: #BA9FB7;
     }
 }
+
+@media (max-width: 768px) {
+
+    .social {
+        margin-right: 0;
+    
+    }
+
+    }
+
+@media (max-width: 568px) {
+    .footer {
+        flex-direction: column;
+
+        .logo {
+            margin-right: 0;
+        }
+
+        &__item {
+            flex-direction: column;
+        }        
+    }   
+
+    .social {
+        margin-top: 20px;
+    }
+
+    .copyright {
+        display: none;
+    }
+}

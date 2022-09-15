@@ -6,6 +6,7 @@
     
     img {
         margin-left: 202px;
+        max-width: 100%;
     }
 
     &__items {
@@ -17,7 +18,31 @@
         top: 110px;
         right: 101px;
         width: 440px;
+        max-width: 100%;
         padding: 124px 97px 119px 63px;
         background-color: #B08EAD;
+    }
+}
+
+@media (max-width: 920px) {
+    .subcollection {
+            
+        img {
+            margin-left: 0;
+        }
+
+        &__items {
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        &__item {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: .8;
+    }
+
     }
 }

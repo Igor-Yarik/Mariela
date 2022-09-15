@@ -42,3 +42,16 @@
         }
     }
 }
+
+@media (max-width: 1220px) {
+    .shop__item {
+        width: 50%;
+
+            }
+}
+
+@media (max-width: 800px) {
+    .shop__item {
+        width: 100%;
+    }
+}
