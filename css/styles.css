@@ -51,7 +51,6 @@ a {
 }
 .title__btn {
   font-family: "Roboto";
-  display: inline-flex;
   font-weight: 400;
   font-size: 11px;
   line-height: 15px;
@@ -59,10 +58,11 @@ a {
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: #B99BB6;
-  border: 1px solid #B99BB6;
   border-radius: 25px;
+  border: 1px solid #B99BB6;
   padding: 16px 26px 14px 26px;
   transition: all 0.5s;
+  overflow: hidden;
 }
 .title__btn:hover {
   background-color: #B99BB6;
@@ -152,6 +152,11 @@ a {
   margin-bottom: 24px;
 }
 
+.logo:hover {
+  transform: rotateY(360deg);
+  transition: all 2s;
+}
+
 .navigation nav {
   display: flex;
 }
@@ -160,12 +165,17 @@ a {
   line-height: 30px;
   color: #B08EAD;
   margin-left: 40px;
+  transition: all 0.3s;
 }
 .navigation a:first-child {
   margin-left: 0;
 }
 .navigation a:last-child {
   margin-left: 45px;
+}
+.navigation a:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
 }
 
 @media (max-width: 1199px) {
@@ -269,6 +279,11 @@ a {
 }
 .designer__subitem {
   background-color: #CEB3CB;
+  transition: all 0.3s;
+}
+.designer__subitem:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
 }
 .designer .title__subtext {
   margin-top: 13px;
@@ -302,10 +317,10 @@ a {
     margin-bottom: 30px;
   }
   .designer__subitem:last-child {
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
   .designer .title__btn {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 767px) {
@@ -821,9 +836,9 @@ footer {
   transition: all 0.5s;
 }
 .social:hover {
-  background-color: blue;
+  background-color: #3b5998;
   transition: all 0.5s;
-  box-shadow: 0 0 5px 5px blue;
+  box-shadow: 0 0 5px 5px #3b5998;
 }
 
 .copyright {
