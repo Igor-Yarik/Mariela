@@ -52,3 +52,14 @@
 
     }
 }
+
+@media (max-width: 568px) {
+    .about {
+
+        &__item {
+            padding: 40px 40px 40px 40px;
+            
+        }
+    }
+    
+}

@@ -51,8 +51,8 @@
     }
 
     .designer__subitem {
-        width: 368px;
-        margin-bottom:  30px;
+        max-width: 368px;
+        margin-bottom: 30px;
 
         &:last-child {
             margin-bottom: 0;
@@ -72,6 +72,14 @@
             width: 100%;
         }
     }
+}
 
+@media (max-width: 568px) {
+    .designer__subitem {
+
+        img {
+            width: 100%;
+        }
     }
     
+}

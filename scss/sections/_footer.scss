@@ -103,8 +103,31 @@ footer {
 
 @media (max-width: 768px) {
 
+    .footer {    
+
+        flex-direction: column;
+   
+        &__item {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo {
+            margin-right: 0;
+        }
+    }
+
     .social {
-        margin-right: 0;    
+        margin-right: 0;   
+        margin-top: 20px; 
+    }
+
+    .copyright__text {
+        font-size: 10px;
+    }
+
+    .copyright__text:nth-child(2n) {
+        margin-right: 5px;
     }
 }
 
@@ -123,13 +146,19 @@ footer {
 
     .footer .navigation .nav_link {
         margin-left: 0;
+        margin-bottom: 10px;
     }
 
     .social {
         margin-top: 20px;
+        margin-right: 0;
+    }
+
+    .copyright__item:first-child {
+        display: none;
     }
 
     .copyright {
-        display: none;
-    }
+        justify-content: flex-end;
+    }    
 }

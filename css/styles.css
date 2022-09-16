@@ -197,6 +197,7 @@ a {
   width: 50px;
   height: 50px;
   background-color: #A78BA4;
+  z-index: 0;
 }
 .collection::before {
   position: absolute;
@@ -213,6 +214,7 @@ a {
 }
 .collection__items {
   position: relative;
+  z-index: 1;
 }
 .collection__item {
   position: absolute;
@@ -289,7 +291,7 @@ a {
     align-items: center;
   }
   .designer__subitem {
-    width: 368px;
+    max-width: 368px;
     margin-bottom: 30px;
   }
   .designer__subitem:last-child {
@@ -301,6 +303,11 @@ a {
 }
 @media (max-width: 768px) {
   .designer .title__subtext {
+    width: 100%;
+  }
+}
+@media (max-width: 568px) {
+  .designer__subitem img {
     width: 100%;
   }
 }
@@ -341,6 +348,11 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0.8;
+  }
+}
+@media (max-width: 568px) {
+  .about__item {
+    padding: 40px 40px 40px 40px;
   }
 }
 .carrer {
@@ -412,6 +424,11 @@ a {
     text-align: center;
   }
 }
+@media (max-width: 768px) {
+  .carrer__items {
+    padding-top: 20px;
+  }
+}
 @media (max-width: 568px) {
   .carrer__item {
     padding-left: 0;
@@ -459,9 +476,15 @@ a {
     opacity: 0.8;
   }
 }
+@media (max-width: 568px) {
+  .subcollection__item {
+    text-align: center;
+    padding: 40px 40px 40px 40px;
+  }
+}
 .shop {
-  margin-top: 75px;
-  margin-bottom: 75px;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 .shop__items {
   display: flex;
@@ -503,8 +526,8 @@ a {
 
 @media (max-width: 1220px) {
   .shop {
-    margin-top: 30px;
-    margin-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 0;
   }
   .shop__item {
     width: 50%;
@@ -518,6 +541,9 @@ a {
 @media (max-width: 568px) {
   .shop__item__price {
     margin-bottom: 20px;
+  }
+  .shop__item__image {
+    width: 100%;
   }
 }
 .data {
@@ -826,8 +852,25 @@ footer {
   }
 }
 @media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer__item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .logo {
+    margin-right: 0;
+  }
   .social {
     margin-right: 0;
+    margin-top: 20px;
+  }
+  .copyright__text {
+    font-size: 10px;
+  }
+  .copyright__text:nth-child(2n) {
+    margin-right: 5px;
   }
 }
 @media (max-width: 568px) {
@@ -842,11 +885,16 @@ footer {
   }
   .footer .navigation .nav_link {
     margin-left: 0;
+    margin-bottom: 10px;
   }
   .social {
     margin-top: 20px;
+    margin-right: 0;
+  }
+  .copyright__item:first-child {
+    display: none;
   }
   .copyright {
-    display: none;
+    justify-content: flex-end;
   }
 }

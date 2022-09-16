@@ -1,6 +1,6 @@
 .shop {
-    margin-top: 75px;
-    margin-bottom: 75px;
+    padding-top: 75px;
+    padding-bottom: 75px;
 
     &__items {
         display: flex;
@@ -49,8 +49,8 @@
 @media (max-width: 1220px) {
 
     .shop {
-        margin-top: 30px;
-        margin-bottom: 0;
+        padding-top: 30px;
+        padding-bottom: 0;
     }
 
     .shop__item {
@@ -70,5 +70,9 @@
 
     .shop__item__price {
         margin-bottom: 20px;
+    }
+
+    .shop__item__image {
+        width: 100%;
     }
 }
