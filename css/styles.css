@@ -333,6 +333,7 @@ a {
   max-width: 100%;
   padding: 124px 58px 119px 63px;
   background-color: #B08EAD;
+  text-align: left;
 }
 
 @media (max-width: 920px) {
@@ -352,6 +353,7 @@ a {
 }
 @media (max-width: 568px) {
   .about__item {
+    text-align: center;
     padding: 40px 40px 40px 40px;
   }
 }

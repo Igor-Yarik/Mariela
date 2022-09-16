@@ -26,6 +26,7 @@
         max-width: 100%;
         padding: 124px 58px 119px 63px;
         background-color: #B08EAD;
+        text-align: left;
     }
 }
 
@@ -57,6 +58,7 @@
     .about {
 
         &__item {
+            text-align: center;
             padding: 40px 40px 40px 40px;
             
         }
