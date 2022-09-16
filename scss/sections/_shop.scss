@@ -14,7 +14,10 @@
         flex-direction: column;
         align-items: center;
         width: 33.33%;
-        transition: all 0.5s;
+
+        &__image {
+            transition: all 0.5s;
+        }
 
         &__image:hover {
             box-shadow: 0 0 10px 10px #CEB3CB;
@@ -44,6 +47,12 @@
 }
 
 @media (max-width: 1220px) {
+
+    .shop {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
     .shop__item {
         width: 50%;
 
@@ -53,5 +62,13 @@
 @media (max-width: 800px) {
     .shop__item {
         width: 100%;
+    }
+}
+
+@media (max-width: 568px) {
+    
+
+    .shop__item__price {
+        margin-bottom: 20px;
     }
 }

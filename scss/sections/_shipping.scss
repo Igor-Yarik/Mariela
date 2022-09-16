@@ -1,7 +1,7 @@
 .shipping {
     background-color: #D6BBD3;
     padding-top: 46px;
-    padding-bottom: 12px;
+    padding-bottom: 36px;
 
     &__items {
         display: flex;
@@ -29,6 +29,14 @@
         }
     }
 }
+
+@media (max-width: 1220px) {
+    .shipping {
+        padding-top: 26px;
+        padding-bottom: 16px;
+}
+}
+
 
 @media (max-width: 568px) {
     .shipping__items {

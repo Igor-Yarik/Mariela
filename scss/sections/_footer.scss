@@ -86,14 +86,27 @@ footer {
     }
 }
 
+@media (max-width: 1220px) {
+
+    .footer {    
+   
+        &__item {
+            align-items: flex-start;
+        }
+    }
+
+    .social {
+        margin-right: 70px;
+  
+    }
+}
+
 @media (max-width: 768px) {
 
     .social {
-        margin-right: 0;
-    
+        margin-right: 0;    
     }
-
-    }
+}
 
 @media (max-width: 568px) {
     .footer {
@@ -105,8 +118,12 @@ footer {
 
         &__item {
             flex-direction: column;
-        }        
+        }
     }   
+
+    .footer .navigation .nav_link {
+        margin-left: 0;
+    }
 
     .social {
         margin-top: 20px;

@@ -68,3 +68,14 @@
 
     }
 }
+
+@media (max-width: 568px) {
+    .collection {
+        
+        &__item {
+        text-align: center;
+        padding: 40px 40px 40px 40px;
+    }
+
+    }
+}

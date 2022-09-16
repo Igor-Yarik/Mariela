@@ -85,8 +85,24 @@
 }
 
 @media (max-width: 1220px) {
+
+    .data {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
     .data__items {
         flex-direction: column;
+    }
+
+
+    .data__item {
+
+        &:first-child {
+            margin-right: 0;
+            margin-left: 0;
+        }
+        
     }
 
     .data__item:last-child {
@@ -95,12 +111,26 @@
 }
 
 @media (max-width: 568px) {
+
+    
+
     .data__item {
+        text-align: center;
 
         &:first-child {
-            margin-right: 0;
-            margin-left: 0;
+            text-align: center;
+            width: auto;            
+        }
+
+        &:last-child {
+            justify-content: center;
         }
         
+    }
+
+    .data__text {
+        justify-content: center;
+        text-align: center;
+
     }
 }
