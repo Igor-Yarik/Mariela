@@ -38,9 +38,8 @@
     }
 }
 
-@media (max-width: 1220px) {
+@media (max-width: 1199px) {
     .designer {
-
         padding-top: 20px;
         padding-bottom: 20px;
     }
@@ -64,22 +63,21 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     .designer {
-        
+
         .title__subtext {
             width: 100%;
         }
     }
 }
 
-@media (max-width: 568px) {
+@media (max-width: 575px) {
     .designer__subitem {
 
         img {
             width: 100%;
         }
     }
-    
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mariela</title>
+    <title>Mariela (OKAY)</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto&display=swap"
         rel="stylesheet">
@@ -14,9 +14,9 @@
     <header>
         <div class="container">
             <div class="header" id="top">
-                <div class="logo">
+                <a class="logo" href="#">
                     <img src="./images/header/logo.png" alt="Logo">
-                </div>
+                </a>
                 <div class="navigation">
                     <nav>
                         <a class="nav_link" href="#">Home</a>
@@ -245,9 +245,9 @@
         <div class="container">
             <div class="footer">
                 <div class="footer__item">
-                    <div class="logo">
+                    <a class="logo" href="#">
                         <img src="./images/footer/logo.png" alt="Logo">
-                    </div>
+                    </a>
                     <div class="navigation">
                         <nav>
                             <a class="nav_link" href="#">Home</a>
@@ -285,7 +285,7 @@
     </footer>
 
     <script>
-        $('a[href*="#top"]').on('click', function () {
+        $('a[href*="#top"], [href*="#data"], [href*="#products"], [href*="#about"]').on('click', function () {
             $('html, body').animate({
                 scrollTop: $($.attr(this, 'href')).offset().top
             }, 1500);
@@ -294,4 +294,5 @@
     </script>
 
 </body>
+
 </html>

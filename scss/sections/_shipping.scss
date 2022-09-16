@@ -20,6 +20,12 @@
         height: 95px;
         background: #BA9FB7;
         border-radius: 111px;
+        transition: all 0.2s;
+
+        &:hover {
+            box-shadow: 0 0 5px 3px #FFFFFF, inset 0 0 5px 3px #FFFFFF;
+            transition: all 0.2s;
+        }
 
         img {
             position: absolute;
@@ -30,15 +36,14 @@
     }
 }
 
-@media (max-width: 1220px) {
+@media (max-width: 1199px) {
     .shipping {
         padding-top: 26px;
         padding-bottom: 16px;
-}
+    }
 }
 
-
-@media (max-width: 568px) {
+@media (max-width: 575px) {
     .shipping__items {
         flex-direction: column;
     }

@@ -19,26 +19,29 @@
         border: 1px solid #B99BB6;
         border-radius: 25px;
         padding: 16px 26px 14px 26px;
-        transition: all 0.5s;        
+        transition: all 0.5s;
+        
 
         &:hover {
             background-color: #B99BB6;
             color: #FFFFFF;
-            transition: all 0.5s;            
-        }        
+            transition: all 0.5s;
+            box-shadow: 0 0 10px 1px #B99BB6;
+        }
     }
 
-    &__text, &__btn__buy  {
+    &__text, 
+    &__btn__buy {
         font-family: 'Roboto', sans-serif;
         font-size: 14px;
         line-height: 30px;
         letter-spacing: 1.5px;
         text-transform: uppercase;
         color: #FFFFFF;
-    }   
+    }
 
     &__btn__buy {
-        padding-bottom: 7px;  
+        padding-bottom: 7px;
         border-bottom: 2px solid #FFFFFF;
     }
 
@@ -101,7 +104,7 @@
         font-weight: 400;
         font-size: 22px;
         line-height: 30px;
-        text-align: center;    
+        text-align: center;
         color: #FFFFFF;
     }
 
@@ -110,7 +113,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 30px;
-        text-align: center;    
-        color: #FFFFFF;        
+        text-align: center;
+        color: #FFFFFF;
     }
 }

@@ -16,19 +16,19 @@
         width: 33.33%;
 
         &__image {
-            transition: all 0.5s;
+            transition: all 0.2s;
         }
 
         &__image:hover {
-            box-shadow: 0 0 10px 10px #CEB3CB;
-            transition: all 0.5s;
+            box-shadow: 0 0 10px 5px #CEB3CB;
+            transition: all 0.2s;
         }
 
         &__name {
             font-weight: 400;
             font-size: 24px;
             line-height: 30px;
-            text-align: center;            
+            text-align: center;
             color: #5F4D5D;
             margin-top: 9px;
             margin-bottom: 7px;
@@ -39,14 +39,14 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 18px;
-            text-align: center;            
+            text-align: center;
             color: #B0B0B0;
             margin-bottom: 54px;
         }
     }
 }
 
-@media (max-width: 1220px) {
+@media (max-width: 1199px) {
 
     .shop {
         padding-top: 30px;
@@ -55,18 +55,16 @@
 
     .shop__item {
         width: 50%;
-
-            }
+    }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 991px) {
     .shop__item {
         width: 100%;
     }
 }
 
-@media (max-width: 568px) {
-    
+@media (max-width: 575px) {
 
     .shop__item__price {
         margin-bottom: 20px;

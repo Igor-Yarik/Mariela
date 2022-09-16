@@ -45,7 +45,7 @@
     }
 }
 
-@media (max-width: 1220px) {
+@media (max-width: 1199px) {
     .carrer__items {
 
         flex-direction: column;
@@ -64,7 +64,7 @@
 
             .carrer__item {
                 padding-left: 29px;
-            }  
+            }
         }
 
         & img {
@@ -83,14 +83,14 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .carrer__items {
         padding-top: 20px;
-        
+
     }
 }
 
-@media (max-width: 568px) {
+@media (max-width: 575px) {
 
     .carrer__item {
         padding-left: 0;

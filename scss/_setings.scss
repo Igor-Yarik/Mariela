@@ -21,15 +21,26 @@ a {
     margin-left: auto;
 }
 
-.designer .container {
-    max-width: calc(1440px - 262px);
+.designer {
+    .container {
+        max-width: calc(1440px - 262px);
+    }
 }
 
-.shipping .container {
-    max-width: calc(1440px - 634px);
+.shipping {
+    .container {
+        max-width: calc(1440px - 634px);
+    }
 }
 
-@media (max-width: 1220px) {   
+@media (max-width: 1199px) {
+    .container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 575px) {
     .container {
         padding-right: 10px;
         padding-left: 10px;
