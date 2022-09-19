@@ -196,3 +196,17 @@ a {
   margin-bottom: 24px;
   margin-left: 23px;
 }
+
+.about {
+  background-color: #CEB3CB;
+}
+.about__items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.about__item {
+  background-color: #B08EAD;
+  width: 440px;
+  padding: 124px 58px 119px 63px;
+}
