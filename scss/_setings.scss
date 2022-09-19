@@ -5,10 +5,9 @@
 body {
     margin: 0;
     font-family: 'Cormorant Garamond', serif;
-    /* font-family: 'Roboto', sans-serif; */
 }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
@@ -17,11 +16,33 @@ a {
 }
 
 .container {
-    width: calc(1440px - 226px);
+    max-width: calc(1440px - 226px);
     margin-right: auto;
     margin-left: auto;
 }
 
-.designer .container {
-    width: calc(1440px - 262px);
+.designer {
+    .container {
+        max-width: calc(1440px - 262px);
+    }
+}
+
+.shipping {
+    .container {
+        max-width: calc(1440px - 634px);
+    }
+}
+
+@media (max-width: 1199px) {
+    .container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
 }

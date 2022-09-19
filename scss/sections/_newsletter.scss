@@ -1,0 +1,90 @@
+.newsletter {
+    margin-top: 95px;
+    margin-bottom: 107px;
+    text-align: center;
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        margin-top: 13px;
+
+        &__item {
+            font-family: 'Cormorant Garamond';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: #CEB3CB;
+            padding: 14px 0 16px 24px;
+            border: 1px solid #CEB3CB;
+            max-width: 208px;
+
+            &:first-child {
+                border-radius: 3px 0px 0px 3px;
+                border-right: none;
+            }
+
+            &::placeholder {
+                color: #CEB3CB;
+            }
+        }
+
+        &__btn {
+            font-family: 'Cormorant Garamond';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center;
+            color: #FFFFFF;
+            background-color: #CEB3CB;
+            border: none;
+            border-radius: 0px 3px 3px 0px;
+            padding: 15px 44px;
+            cursor: pointer;
+            transition: all 0.5s;
+            border: 1px solid #CEB3CB;
+            border-left: none;
+            width: 179px;
+
+            &:hover {
+                color: #CEB3CB;
+                background-color: #FFFFFF;
+                transition: all 0.5s;
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .newsletter {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 575px) {
+    .newsletter {
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        &__form {
+            flex-direction: column;
+            align-items: center;
+
+            &__item {
+                border: 1px solid #CEB3CB;
+                margin-bottom: 20px;
+
+                &:first-child {
+                    border-radius: 3px 3px 3px 3px;
+                    border-right: 1px solid #CEB3CB;
+                }
+            }
+
+            &__btn {
+                border-left: 1px solid #CEB3CB;
+                border-radius: 3px 3px 3px 3px;
+            }
+        }
+    }
+}
