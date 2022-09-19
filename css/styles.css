@@ -317,20 +317,6 @@ a {
   margin-left: 23px;
 }
 
-<<<<<<< HEAD
-.about {
-  background-color: #CEB3CB;
-}
-.about__items {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.about__item {
-  background-color: #B08EAD;
-  width: 440px;
-  padding: 124px 58px 119px 63px;
-=======
 @media (max-width: 1199px) {
   .designer {
     padding-top: 20px;
@@ -954,5 +940,4 @@ footer {
   .copyright {
     justify-content: flex-end;
   }
->>>>>>> f7f2d6b73c8ebc7407edf34e660f58046f2f18b7
 }
